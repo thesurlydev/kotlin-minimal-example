@@ -9,6 +9,13 @@ An example of using kotlin-minimal for a simple CRUD API over HTTP/JSON.
 * No reflection
 
 
+## Dependencies
+
+* [kotlin-minimal-server](https://github.com/thesurlydev/kotlin-minimal-server)
+* [kotlin-minimal-rdms](https://github.com/thesurlydev/kotlin-minimal-rdms)
+* db driver
+* kotlinx.serialization - for JSON serialization without reflection
+
 ## Compile and Package
 
 ```shell
@@ -21,7 +28,7 @@ An example of using kotlin-minimal for a simple CRUD API over HTTP/JSON.
 java -jar build/libs/kotlin-minimal-example-0.1.0-standalone.jar
 ```
 
-## database
+## Database
 
 To effectively reset the database:
 ```shell
