@@ -1,0 +1,13 @@
+[Unit]
+Description=kotlin-minimal
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/.sdkman/candidates/java/current/bin/java -jar /home/ubuntu/kotlin-minimal-1.0-SNAPSHOT-standalone.jar
+Restart=always
+RestartSec=10
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

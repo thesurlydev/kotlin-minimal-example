@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: minimal-postgres
+    env_file:
+      - .env
+    ports:
+      - 5433:5432
+    restart: always
+    command: ["postgres", "-c", "hba_file=/var/lib/pg_hba.conf"]
+    volumes:
+      - ./infrastructure/db/pg_hba.conf:/var/lib/pg_hba.conf
+      - ./infrastructure/db:/docker-entrypoint-initdb.d
+      - ./data/db:/var/lib/postgresql/data

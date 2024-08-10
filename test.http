@@ -1,0 +1,22 @@
+### Health check
+GET http://localhost:8081/health
+
+### GET all people
+GET http://localhost:8081/api/people
+
+### POST create person
+POST http://localhost:8081/api/people
+Content-Type: application/json
+
+{
+    "name": "John",
+    "age": 34
+}
+
+### DELETE person by id
+DELETE http://localhost:8081/api/people/92a1cc08-27c3-45ad-86d4-3b31c099b201
+
+
+### GET person by id
+GET http://localhost:8081/api/people/92a1cc08-27c3-45ad-86d4-3b31c099b201
+

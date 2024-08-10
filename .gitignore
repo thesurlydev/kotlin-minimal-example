@@ -1,0 +1,21 @@
+### IntelliJ IDEA ###
+.idea/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### App ###
+build/
+*.jar
+*.log
+*.iml
+
+data
+# Project exclude paths
+/.gradle/
