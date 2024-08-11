@@ -1,6 +1,6 @@
 # kotlin-minimal-example
 
-An example of using kotlin-minimal for a simple CRUD API over HTTP/JSON.
+An example of using [kotlin-minimal-server](https://github.com/thesurlydev/kotlin-minimal-server) for a simple CRUD API over HTTP/JSON.
 
 ## Goals
 
