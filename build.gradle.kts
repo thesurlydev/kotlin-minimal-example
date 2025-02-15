@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.0.10"
-    kotlin("plugin.serialization") version "2.0.10"
+    kotlin("jvm") version "2.1.10"
+    kotlin("plugin.serialization") version "2.1.10"
     application // for fat jar
 }
 
@@ -15,8 +15,8 @@ repositories {
 dependencies {
     implementation("dev.surly:kotlin-minimal-server:0.1.0")
     implementation("dev.surly:kotlin-minimal-rdms:0.1.0")
-    implementation("org.postgresql:postgresql:42.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
+    implementation("org.postgresql:postgresql:42.7.5")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
 }
 
 tasks.test {
